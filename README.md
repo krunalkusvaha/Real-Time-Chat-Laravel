@@ -1,5 +1,6 @@
+
 ## Steps:
-- laravel new ChatApplication (create project)
+- composer create-project laravel/laravel Real-Time-Chat(create project)
 - composer require laravel/ui
 - php artisan ui vue --auth
 
@@ -7,7 +8,7 @@
 	- npm install vue@next vue-loader@next
 	- remove package.lock.json
 	- remove node_modules folder
-	- run : `npm install`
+	- run : 'npm install'
 
 ### laravel-socket
 	- - [Read the documentation](https://beyondco.de/docs/laravel-websockets/getting-started/introduction)
@@ -20,8 +21,5 @@
 	- php artisan websockets:serve
 	- npm run watch 
 
-# Output
-
-![alt text](https://github.com/AjayYadavAi/Laravel-8-Vue-3-ChatApplication/blob/main/image.png?raw=true)
 
 
