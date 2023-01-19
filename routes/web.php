@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +24,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('chat', [App\Http\Controllers\HomeController::class, 'chat'])->name('chat');
 
-Route::get('messages', [App\Http\Controllers\HomeController::class, 'messages'])
-            ->name('messages');
+Route::get('messages', [App\Http\Controllers\HomeController::class, 'messages'])->name('messages');
 
-Route::post('messages', [App\Http\Controllers\HomeController::class, 'messageStore'])
-            ->name('messageStore');
+Route::post('messages', [App\Http\Controllers\HomeController::class, 'messageStore'])->name('messageStore');
+
+Route::get('user-list',[HomeController::class,'user_list'])->name('user-list');
 
